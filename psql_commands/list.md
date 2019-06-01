@@ -44,9 +44,3 @@ description: ""
 ```sql
 \dD
 ```
-
-# TODO
-
-```sql
-\dS
-```
