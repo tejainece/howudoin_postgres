@@ -6,6 +6,8 @@ SELECT * FROM (
            ('Katherine', ARRAY[6, 7, 8, 9, 10])
             ) AS t;
 
+SELECT unnest(ARRAY[1, 2, 3, 4, 5]);
+
 DROP TABLE IF EXISTS Person;
 
 CREATE TABLE Person (
@@ -22,3 +24,5 @@ INSERT INTO Person VALUES ('Mark', ARRAY[6, 7, 8]);
 SELECT *, array_length(numbers, 1) FROM Person;
 
 SELECT * FROM Person WHERE array_length(numbers, 1) > 3;
+
+-- UPDATE Person SET

@@ -31,3 +31,9 @@ SELECT *, array_length(numbers, 1) FROM Person;
 ```sql
 SELECT * FROM Person WHERE array_length(numbers, 1) > 3;
 ```
+
+# Unnest ARRAY into rows
+
+```sql
+SELECT unnest(ARRAY[1, 2, 3, 4, 5]);
+```
