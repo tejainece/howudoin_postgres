@@ -32,3 +32,5 @@ UPDATE Person SET numbers = array_cat(numbers, ARRAY[10, 11]) WHERE name = 'Mark
 UPDATE Person SET numbers = numbers || 12 WHERE name = 'Mark';
 
 UPDATE Person SET numbers = numbers || ARRAY[13, 14, 15] WHERE name = 'Mark';
+
+SELECT * FROM Person WHERE numbers @> ARRAY [3];

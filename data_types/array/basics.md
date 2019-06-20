@@ -47,6 +47,12 @@ UPDATE Person SET numbers = numbers || 12 WHERE name = 'Mark';
 UPDATE Person SET numbers = numbers || ARRAY[13, 14, 15] WHERE name = 'Mark';
 ```
 
+# Contains check
+
+```sql
+SELECT * FROM Person WHERE numbers @> ARRAY [3];
+```
+
 # Unnest ARRAY into rows
 
 ```sql
