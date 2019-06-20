@@ -58,3 +58,9 @@ SELECT * FROM Person WHERE numbers @> ARRAY [3];
 ```sql
 SELECT unnest(ARRAY[1, 2, 3, 4, 5]);
 ```
+
+> TODO slicing
+
+> TODO remove
+
+> TODO indexOf
