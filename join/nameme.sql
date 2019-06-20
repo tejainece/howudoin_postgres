@@ -15,9 +15,9 @@ CREATE TABLE Cities (
     location        POINT
 );
 
-INSERT INTO Weather VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27');
-INSERT INTO Weather VALUES ('San Francisco', 43, 57, 0.0, '1994-11-29');
-INSERT INTO Weather VALUES ('Hayward', 54, 37, 0.0, '1994-11-29');
+INSERT INTO Weather VALUES ('San Francisco', 46, 50, 0.25, '1994-11-27'),
+                           ('San Francisco', 43, 57, 0.0, '1994-11-29'),
+                           ('Hayward', 54, 37, 0.0, '1994-11-29');
 
 INSERT INTO Cities (name, location) VALUES ('San Francisco', '(-194.0, 53.0)');
 INSERT INTO Cities (name, location) VALUES ('Stockholm', '(59.32, 18.06)');
