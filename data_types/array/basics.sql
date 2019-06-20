@@ -25,4 +25,10 @@ SELECT *, array_length(numbers, 1) FROM Person;
 
 SELECT * FROM Person WHERE array_length(numbers, 1) > 3;
 
--- UPDATE Person SET
+UPDATE Person SET numbers = array_append(numbers, 9) WHERE name = 'Mark';
+
+UPDATE Person SET numbers = array_cat(numbers, ARRAY[10, 11]) WHERE name = 'Mark';
+
+UPDATE Person SET numbers = numbers || 12 WHERE name = 'Mark';
+
+UPDATE Person SET numbers = numbers || ARRAY[13, 14, 15] WHERE name = 'Mark';
